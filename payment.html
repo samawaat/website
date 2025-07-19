@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <meta name="description" content="Make secure online payments for Samawaat's 9-month youth leadership program. Each payment covers 10 instructor-led sessions.">
+  <meta property="og:title" content="Payment Portal | Samawaat Youth Leadership Program">
+  <meta property="og:description" content="Securely pay for your child's Samawaat program sessions online.">
+  <meta property="og:image" content="https://samawaat.com/images/SamawaatLogoLightsandF8F5F2.png">
+  <meta property="og:url" content="https://samawaat.com/payment.html">
+  <meta property="og:type" content="website">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <title>Payment | Samawaat Youth Leadership Program</title>
+
+      <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+
+
+
+  <style>
+    .smwt-brand-title {
+      font-family: "Playfair Display", serif;
+      font-weight: 600;
+    }
+    .smwt-brand-color {
+      color: #3F51B5;
+    }
+    .bg-smwt-navbar {
+      background-color: #F8F5F2;
+    }
+    .nav-link.active {
+      font-weight: 600;
+      color: #3F51B5 !important;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-smwt-navbar border-bottom">
+    <div class="container col-lg-9 col-xl-8 col-xxl-7 py-3">
+      <div class="d-flex flex-wrap align-items-center justify-content-between">
+        <a href="index.html" class="d-flex align-items-center mb-2 mb-md-0 text-dark text-decoration-none">
+          <img src="./images/SamawaatLogoLightsandF8F5F2.png" height="40" alt="Samawaat Logo">
+        </a>
+        <ul class="nav">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 smwt-brand-color">Home</a></li>
+          <li class="nav-item"><a href="program.html" class="nav-link px-2 smwt-brand-color">Program</a></li>
+          <li class="nav-item"><a href="enroll.html" class="nav-link px-2 smwt-brand-color">Enroll</a></li>
+          <li class="nav-item"><a href="payment.html" class="nav-link px-2 smwt-brand-color active" aria-current="page">Pay</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link px-2 smwt-brand-color">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="py-5">
+    <div class="container col-lg-9 col-xl-8 col-xxl-7 py-5">
+      <h1 class="smwt-brand-title smwt-brand-color mb-4">Program Payments</h1>
+
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+          <h2 class="h5 text-primary mb-3"><i class="bi bi-credit-card me-2"></i>Pay for Upcoming Sessions</h2>
+          <p class="mb-3">Use the buttons below to make secure payments via Stripe. First two sessions are free.</p>
+
+          
+          <div class="d-flex align-items-start mb-4">
+            <i class="bi bi-info-circle-fill text-primary me-3 fs-4"></i>
+            <div>
+              <p class="mb-1 fw-semibold">When doing the payment, please provide:</p>
+              <ul class="mb-0 small list-unstyled">
+                <li><i class="bi bi-person-fill text-secondary me-2"></i>Parent's Name, Phone Number, and Email</li>
+                <li><i class="bi bi-person-badge-fill text-secondary me-2"></i>Student's Name and Email</li>
+              </ul>
+              <p class="small text-muted mt-2">This helps us match your payment with your child’s enrollment.</p>
+            </div>
+          </div>
+
+          <div class="d-grid gap-3">
+            <a href="https://buy.stripe.com/abc123abc123" class="btn btn-outline-primary btn-lg" target="_blank">
+              Pay for Sessions 3–12 ($400)
+            </a>
+            <a href="https://buy.stripe.com/def456def456" class="btn btn-outline-primary btn-lg" target="_blank">
+              Pay for Sessions 13–22 ($400)
+            </a>
+            <a href="https://buy.stripe.com/ghi789ghi789" class="btn btn-outline-primary btn-lg" target="_blank">
+              Pay for Sessions 23–32 ($400)
+            </a>
+          </div>
+
+          <p class="mt-4 small text-muted">All payments are securely processed by Stripe. You will receive a confirmation email after each payment.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-light mt-5 pt-4">
+    <div class="container col-lg-9 col-xl-8 col-xxl-7">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <a href="/" class="d-flex align-items-center text-decoration-none">
+            <img src="./images/SamawaatLogoLightGrayf8f9fa.png" alt="Samawaat Logo" height="60" class="me-2">
+          </a>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="text-uppercase fw-bold">Contact Us</h6>
+          <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+1 (858) 549 0786</p>
+          <p class="mb-0"><i class="bi bi-envelope-fill me-2"></i>hello@samawaat.org</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="text-uppercase fw-bold">Follow Us</h6>
+          <a href="https://facebook.com" target="_blank" class="text-dark me-3"><i class="bi bi-facebook" style="font-size: 1.2rem;"></i></a>
+          <a href="https://instagram.com" target="_blank" class="text-dark me-3"><i class="bi bi-instagram" style="font-size: 1.2rem;"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="text-dark"><i class="bi bi-linkedin" style="font-size: 1.2rem;"></i></a>
+        </div>
+      </div>
+      <hr class="my-3">
+      <div class="text-center pb-3 small text-muted">© 2025 Samawaat, LLC. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
