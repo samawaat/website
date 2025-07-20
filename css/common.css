@@ -15,7 +15,7 @@
 
 /* Navigation Background */
 .bg-smwt-navbar {
-  background-color: #FFF8ED;
+  background-color: #F8F5F2;
 }
 
 /* Active Navigation Link */
@@ -31,7 +31,24 @@
   margin-right: 0.5rem;
 }
 
-.header-container {
-    padding-left: 1.5rem;
+/* Carousel Controls - from index.html */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+.carousel-control-prev-icon::after {
+  content: '\2039';
+  font-size: 2rem;
+  color: #3F51B5;
+}
+.carousel-control-next-icon::after {
+  content: '\203A';
+  font-size: 2rem;
+  color: #3F51B5;
 }
 
+/* Make sure navbar appears on top of other content */
+.navbar {
+  position: relative;
+  z-index: 100;
+}
