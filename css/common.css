@@ -16,6 +16,8 @@
 /* Navigation Background */
 .bg-smwt-navbar {
   background-color: #FFF8ED;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* subtle shadow */
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 /* Active Navigation Link */
