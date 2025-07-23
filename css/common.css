@@ -19,6 +19,12 @@
   color: #fff;
 }
 
+/* Fill color */
+.bg-smwt-accent {
+  background-color: #C5CAE9 !important;
+  color: #fff;
+}
+
 /* Card border color */
 .card-strong-border {
   border: 1px solid #3F51B5;
