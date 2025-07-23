@@ -54,3 +54,32 @@
   position: relative;
   z-index: 100;
 }
+
+
+/* Not used
+.hero-image-bg {
+  background-image: url('./../images/skyandflower1920x1440.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 0;
+  color: #fff;
+}
+ */
+
+.hero-image-bg {
+  background-image: url('./../images/skyandflower1920x1440.jpg'); 
+  background-size: 112% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 4rem 0;
+  color: #fff;
+}
+
+
+.bg-soft-indigo {
+  background-color: rgba(159, 168, 218, 0.7); /* soft lavender-indigo tone #9FA8DA with opacity */
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
