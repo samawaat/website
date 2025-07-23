@@ -27,9 +27,14 @@
 
 /* Navigation Background */
 .bg-smwt-navbar {
-  background-color: #FFF8ED;
+  background-color: #FFE4C4; /* Soft Apricot: Light peachy cream, soft but noticeable */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* subtle shadow */
   transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Navigation Background */
+.bg-smwt-card-apricot {
+  background-color: #FFE4C4; /* Soft Apricot: Light peachy cream, soft but noticeable */
 }
 
 /* Active Navigation Link */
