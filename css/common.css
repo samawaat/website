@@ -13,6 +13,13 @@
   color: #3F51B5;
 }
 
+/* Fill color */
+.bg-smwt-primary {
+  background-color: #3F51B5 !important;
+  color: #fff;
+}
+
+
 /* Navigation Background */
 .bg-smwt-navbar {
   background-color: #FFF8ED;
