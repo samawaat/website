@@ -10,12 +10,12 @@
 /* Brand Colors */
 .smwt-brand-color,
 .smwt-brand-color-title {
-  color: #3F51B5;
+  color: #323E80; /* Deep Dark Indigo */
 }
 
 /* Fill color */
 .bg-smwt-primary {
-  background-color: #3F51B5 !important;
+  background-color: #323E80 !important;
   color: #fff;
 }
 
@@ -27,7 +27,7 @@
 
 /* Card border color */
 .card-strong-border {
-  border: 1px solid #3F51B5;
+  border: 1px solid #323E80;
   border-radius: 0.5rem;
 }
 
@@ -45,8 +45,8 @@
 
 /* Active Navigation Link */
 .nav-link.active {
-  font-weight: 600;
-  color: #3F51B5 !important;
+  font-weight: 700;
+  color: #323E80 !important;
 }
 
 /* Additional common styles from various pages */
@@ -64,12 +64,12 @@
 .carousel-control-prev-icon::after {
   content: '\2039';
   font-size: 2rem;
-  color: #3F51B5;
+  color: #323E80;
 }
 .carousel-control-next-icon::after {
   content: '\203A';
   font-size: 2rem;
-  color: #3F51B5;
+  color: #323E80;
 }
 
 /* Make sure navbar appears on top of other content */
