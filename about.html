@@ -53,8 +53,16 @@
   </header>
 
   <!-- Main Content -->
-  <main class="py-5">
-    <div class="container col-lg-9 col-xl-8 col-xxl-7">
+  <main class="py-5"
+  style="background-image: url('./images/aboutbackground.jpg');
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+           position: relative;">
+   <div class="position-absolute top-0 start-0 w-100 h-100"
+       style="background-color: rgba(255, 255, 255, 0.65); z-index: 1;"></div>
+
+    <div class="container col-lg-9 col-xl-8 col-xxl-7 position-relative" style="z-index: 2;">
       <h1 class="smwt-brand-title smwt-brand-color mb-4">Meet the Founder</h1>
 
       <div class="row g-4 align-items-center">
@@ -124,7 +132,7 @@
     </div>
   </main>
 
-  <footer class="bg-smwt-card-apricot mt-5 pt-4">
+  <footer class="bg-smwt-card-apricot pt-4">
     <div class="container col-lg-9 col-xl-8 col-xxl-7">
       <div class="row">
         <div class="col-md-4 mb-3">
