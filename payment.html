@@ -69,55 +69,77 @@
     </div>
   </header>
   
-
   <main class="py-5">
     <div class="container col-lg-9 col-xl-8 col-xxl-7 pb-5">
       <h1 class="smwt-brand-title smwt-brand-color mb-4">Program Payments</h1>
 
       <div class="card border-0 shadow-sm mb-4">
         <div class="card-body">
-          <h2 class="h5 text-primary mb-3"><i class="bi bi-credit-card me-2"></i>Pay for Upcoming Sessions</h2>
-          <p class="mb-3">Use the buttons below to make secure payments via Stripe. 
-            <strong class="text-primary">First two sessions are free.</strong> </p>
-          
-          <div class="d-flex align-items-start mb-4">
-            <i class="bi bi-info-circle-fill text-primary me-3 fs-4"></i>
-            <div>
-              <p class="mb-1 fw-semibold">When doing the payment, please provide:</p>
-              <ul class="mb-0 small list-unstyled">
-                <li><i class="bi bi-person-fill text-secondary me-2"></i>Parent's Name, Phone Number, and Email</li>
-                <li><i class="bi bi-person-badge-fill text-secondary me-2"></i>Student's Name and Email</li>
-              </ul>
-              <p class="small text-muted mt-2">This helps us match your payment with your child's enrollment.</p>
+          <!-- <h2 class="h5 text-primary mb-3"><i class="bi bi-credit-card me-2"></i>Pay for Upcoming Sessions</h2>
+            <p class="mb-3">Use the buttons below to make secure payments via Stripe. 
+              <strong class="text-primary">First two sessions are free.</strong> </p> -->
+
+          <!-- Title, Description and Image Row -->
+          <div class="row align-items-start mb-4">
+            <!-- Left: Text -->
+            <div class="col-md-6">
+              <h2 class="h5 text-primary mb-3">
+                <i class="bi bi-credit-card me-2"></i>Pay for Upcoming Sessions
+              </h2>
+              <p class="mb-0">
+                Use the buttons below to make secure payments via Stripe.
+                <strong class="text-primary">First two sessions are free.</strong>
+              </p>
+
+
+              <div class="d-flex align-items-start my-4">
+                <i class="bi bi-info-circle-fill text-primary me-3 fs-4"></i>
+                <div>
+                  <p class="mb-1 fw-semibold">When doing the payment, please provide:</p>
+                  <ul class="mb-0 small list-unstyled">
+                    <li><i class="bi bi-person-fill text-secondary me-2"></i>Parent's Name, Phone Number, and Email</li>
+                    <li><i class="bi bi-person-badge-fill text-secondary me-2"></i>Student's Name and Email</li>
+                  </ul>
+                  <p class="small text-muted mt-2">This helps us match your payment with your child's enrollment.</p>
+                </div>
+              </div>
+
+
+            </div>
+
+            <!-- Right: Image -->
+            <div class="col-md-6 text-center mt-4 mt-md-0">
+              <img src="./images/paymenthero.png" alt="Payment Illustration" class="img-fluid rounded shadow-sm">
             </div>
           </div>
 
+
           <div class="d-grid gap-3">
             <a href="https://buy.stripe.com/00w7sL70zezU9HraZqeEo00" class="btn btn-outline-primary btn-lg"
-            target="_blank" aria-label="Pay $400 for Sessions 3 through 12">
+              target="_blank" aria-label="Pay $400 for Sessions 3 through 12">
               Pay for Sessions 3–12 ($400)
             </a>
 
-            <a href="https://buy.stripe.com/9B66oH0CbajE1aV5F6eEo01" class="btn btn-outline-primary btn-lg" target="_blank"
-               aria-label="Pay $400 for Sessions 13 through 22">
+            <a href="https://buy.stripe.com/9B66oH0CbajE1aV5F6eEo01" class="btn btn-outline-primary btn-lg"
+              target="_blank" aria-label="Pay $400 for Sessions 13 through 22">
               Pay for Sessions 13–22 ($400)
             </a>
 
-            <a href="https://buy.stripe.com/28E28rfx51N8dXH0kMeEo02" class="btn btn-outline-primary btn-lg" target="_blank"
-               aria-label="Pay $400 for Sessions 23 through 32">
+            <a href="https://buy.stripe.com/28E28rfx51N8dXH0kMeEo02" class="btn btn-outline-primary btn-lg"
+              target="_blank" aria-label="Pay $400 for Sessions 23 through 32">
               Pay for Sessions 23–32 ($400)
             </a>
 
             <p class="text-center text-primary fw-semibold">----- alternatively -----</p>
-            
-            <a href="https://buy.stripe.com/3cI4gz5WvezUg5PffGeEo04" class="btn btn-outline-primary btn-lg" target="_blank"
-               aria-label="Pay $1200 for entire program. Sessions 3 through 32">
+
+            <a href="https://buy.stripe.com/3cI4gz5WvezUg5PffGeEo04" class="btn btn-outline-primary btn-lg"
+              target="_blank" aria-label="Pay $1200 for entire program. Sessions 3 through 32">
               Pay for entire program. Sessions 3–32 ($1200)
             </a>
           </div>
 
-          <p class="mt-4 small text-muted">All payments are securely processed by Stripe. You will receive a 
-            confirmation after each payment. Applicable taxes will be calculated at checkout based on your 
+          <p class="mt-4 small text-muted">All payments are securely processed by Stripe. You will receive a
+            confirmation after each payment. Applicable taxes will be calculated at checkout based on your
             location.</p>
 
           <!-- Right after your last payment button -->
