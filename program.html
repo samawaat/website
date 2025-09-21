@@ -17,6 +17,25 @@
     gtag('config', 'AW-17574709993');
   </script>
 
+  <!-- Google Ads Event snippet for RSVP for Information Session conversion
+      when someone clicks on the chosen link or button for Info Session, 
+      gtag_report_info_session_conversion() should be called . -->
+  <script>
+    function gtag_report_info_session_conversion(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17574709993/amIRCMKq4p4bEOmVo7xB',
+          'value': 1.0,
+          'currency': 'USD',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
