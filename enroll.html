@@ -1,17 +1,6 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEZ0CBMHD0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-XEZ0CBMHD0');
-  </script> -->
-
-
 
   <!-- Google tag (gtag.js) for Analytics + Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEZ0CBMHD0"></script>
@@ -27,6 +16,27 @@
     // Google Ads
     gtag('config', 'AW-17574709993');
   </script>
+
+  <!-- Google Ads Event snippet for Submit Enrollment conversion page
+      when someone clicks on the chosen link or button, 
+      gtag_report_enroll_conversion() should be called . -->
+  <script>
+    function gtag_report_enroll_conversion(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17574709993/xnRfCP6ezZ0bEOmVo7xB',
+          'value': 1.0,
+          'currency': 'USD',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
 
 
   <meta charset="utf-8">
@@ -110,7 +120,8 @@
           <p>Please click the button below to open and submit the enrollment form to register your Student.
             We will follow up with a confirmation and schedule, along with Google Meet links.</p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSffu6DePkpiUHs64xUVK2A-3UUhNDxj0VfisOSGdpM9AiFVIQ/viewform"
-            class="btn btn-primary btn-lg bg-smwt-primary mt-2" target="_blank">
+            onclick="return gtag_report_enroll_conversion(this.href);"
+            class="btn btn-primary btn-lg bg-smwt-primary mt-2">
             Fill Out Enrollment Form
           </a>
         </div>
