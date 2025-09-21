@@ -1,15 +1,7 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEZ0CBMHD0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-XEZ0CBMHD0');
-  </script> -->
 
   <!-- Google tag (gtag.js) for Analytics + Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEZ0CBMHD0"></script>
@@ -26,8 +18,25 @@
     gtag('config', 'AW-17574709993');
   </script>
 
-
-
+  <!-- Google Ads Event snippet for RSVP for Information Session conversion
+      when someone clicks on the chosen link or button for Info Session, 
+      gtag_report_info_session_conversion() should be called . -->
+  <script>
+    function gtag_report_info_session_conversion(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17574709993/amIRCMKq4p4bEOmVo7xB',
+          'value': 1.0,
+          'currency': 'USD',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 
 
   <meta charset="utf-8">
@@ -101,7 +110,9 @@
               </a> -->
 
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCrenfrpdLhab0RYXCtBPV0wODhpf4DVo2rAGILRdFsyoFEw/viewform"
-                  target="_blank" class="btn border px-4 py-2 text-decoration-none" style="background-color: #FFF8ED; color: #3F51B5;">
+                  onclick="return gtag_report_info_session_conversion(this.href);"
+                  class="btn border px-4 py-2 text-decoration-none" 
+                  style="background-color: #FFF8ED; color: #3F51B5;">
                   <i class="bi bi-calendar-plus me-1"></i> <strong>RSVP for Info Session</strong>
                 </a>
 
@@ -568,7 +579,8 @@
           <a href="./enroll.html" class="btn btn-light btn-lg">Enroll Today</a>
           <a href="./program.html" class="btn btn-outline-light btn-lg">Learn More</a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCrenfrpdLhab0RYXCtBPV0wODhpf4DVo2rAGILRdFsyoFEw/viewform" 
-          class="btn btn-outline-light btn-lg">RSVP for Info Session</a>
+            onclick="return gtag_report_info_session_conversion(this.href);"
+            class="btn btn-outline-light btn-lg">RSVP for Info Session</a>
         </div>
       </div>
     </div>
